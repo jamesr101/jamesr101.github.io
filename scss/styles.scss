@@ -1,0 +1,44 @@
+body {
+  font-family: sans-serif;
+}
+
+.hero {
+  background-color: coral;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h1, p {
+    text-align: center;
+  }
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+
+
+}
+
+#about {
+  background-color: moccasin;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+#contact {
+  background-color: slateblue;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2, p, a {
+    text-align: center;
+  }
+
+}
