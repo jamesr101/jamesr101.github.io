@@ -2,6 +2,27 @@ body {
   font-family: sans-serif;
 }
 
+nav {
+  height: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .nav-logo {
+
+    // background-color: red;
+  }
+  ul {
+    padding: 0;
+    margin: 0;
+    li {
+      display: inline;
+      padding: 10px;
+
+    }
+  }
+}
+
 .hero {
   background-color: coral;
   height: 100vh;
@@ -16,9 +37,28 @@ body {
 
 .project {
   display: flex;
-  flex-direction: column;
+  flex-wrap: wrap;
+  h3 {
+    width: 100%;
+  }
+  img {
+    display: inline-flex;
+  }
+}
 
+.container {
+  width: 80vw;
+  // margin: auto;
 
+}
+
+.columns {
+  display: flex;
+  flex-direction: row;
+
+}
+.column {
+  width: 50%;
 }
 
 #about {
@@ -26,8 +66,29 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
+  align-items: center;
   justify-content: center;
 
+
+
+}
+
+.work {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.project {
+    margin-bottom: 100px;
+    ul {
+      padding: 0;
+    }
+    li {
+      display: inline;
+    }
 }
 
 #contact {
@@ -37,8 +98,13 @@ body {
   flex-direction: column;
   justify-content: center;
 
-  h2, p, a {
+  h2, p, ul {
     text-align: center;
+    padding: 0;
+  }
+  li {
+    display: inline;
+
   }
 
 }
