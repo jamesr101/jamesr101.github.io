@@ -3,10 +3,18 @@ body {
 }
 
 nav {
+  position: fixed;
+  top: 0;
+  width: 100vw;
   height: 45px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  z-index: 10;
+  background-color: white;
+  transition: height 0.8s;
+  overflow: hidden;
+
 
 
   a {
@@ -28,6 +36,11 @@ nav {
 
     }
   }
+}
+
+.minimised {
+  height: 0px;
+  transition: height 0.5s;
 }
 
 .hero {
