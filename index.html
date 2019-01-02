@@ -4,9 +4,6 @@
     <meta charset="utf-8">
     <title>James Robins</title>
     <link rel="stylesheet" href="./css/styles.css">
-    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/throttle.js" charset="utf-8"></script>
-    <!-- <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/throttle.js"></script> -->
-
     <script src="js/app.js" charset="utf-8"></script>
   </head>
   <body>
@@ -26,12 +23,15 @@
 
     <!-- hero -->
     <section class="hero">
-      <h1>James Robins</h1>
-      <p> Maker | Culture fiend | Developer</p>
+      <div class="hero-container">
+        <h1>James Robins</h1>
+        <p> Maker | Culture fiend | Developer</p>
+      </div>
+
     </section>
 
     <!-- about -->
-    <section id="about">
+    <section id="about" class="about">
       <div class="container">
         <h2>About</h2>
 
@@ -68,12 +68,14 @@
       <div class="container">
         <h2>Work</h2>
         <div class="project columns">
-          <h3>Tippled</h3>
-          <div class="column">
 
-            <img src="https://fillmurray.com/300/300" alt="filler">
-          </div>
           <div class="column">
+            <h3 class="projectTitle__mobile">Tippled</h3>
+            <img src="assets/images/TippledGIFlow.gif" alt="filler">
+          </div>
+
+          <div class="column">
+            <h3 class="projectTitle">Tippled</h3>
             <p>Tippled is full-stack cocktail recipe application which allows users to see which drinks can be made using the ingredients they own. The application contains a database of cocktail recipes with their corresponding ingredients. Users can create an account and specify which ingredients they have. The cocktail recipes are then filtered by which ingredients the user has. I decided to work as a group with one other developer for this project. One area which I owned was the integration of cocktailDB API. This was my final project for General Assembly’s Web Development Immersive course.</p>
             <ul class="techList">
               <li>Python</li>
@@ -89,12 +91,12 @@
           </div>
         </div>
         <div class="project columns">
-          <h3>Project4</h3>
           <div class="column">
-
-            <img src="https://fillmurray.com/200/300" alt="filler">
+            <h3 class="projectTitle__mobile">ArtMapper</h3>
+            <img src="assets/images/ArtMapperScreen.png" alt="filler">
           </div>
           <div class="column">
+            <h3 class="projectTitle">ArtMapper</h3>
             <p>A MERN full-stack application created in 7 days as a project for General Assembly's Web Development course. ArtMapper allows users to see where paintings are geographically located. Users can add artists to the database and specify where paintings are currently on display. Users can see works of art displayed on a map. This project uses 5 external APIs. This was a group project with two other developers. </p>
             <ul class="techList">
               <li>React.js</li>
@@ -109,12 +111,13 @@
           </div>
         </div>
         <div class="project columns">
-          <h3>Project4</h3>
-          <div class="column">
 
-            <img src="https://fillmurray.com/200/300" alt="filler">
+          <div class="column">
+            <h3 class="projectTitle__mobile">Blog...</h3>
+            <img src="assets/images/BlogGIFLow.gif" alt="filler">
           </div>
           <div class="column">
+            <h3 class="projectTitle">Blog...</h3>
             <p>A full-stack blogging application using JavaScript, Express and EJS templates built in 5 days as part of General Assembly's Web Development course. Blog... is a simple blogging platform which offers moderated commenting, admin users, searching and saving of draft articles. I decided to concentrated on the having admin users and how they could moderate comments before they become public.</p>
             <ul class="techList">
               <li>JavaScript (ES6) / HTML5 / CSS</li>
@@ -129,12 +132,12 @@
           </div>
         </div>
         <div class="project columns">
-          <h3>Project4</h3>
+          <h3 class="projectTitle__mobile">Deep Sea Dive</h3>
           <div class="column">
-
-            <img src="https://fillmurray.com/200/300" alt="filler">
+            <img src="assets/images/DeepSeaDiveGIF2.gif" alt="GIF of Deep Sea Dive">
           </div>
           <div class="column">
+            <h3 class="projectTitle">Deep Sea Dive</h3>
             <p>A JavaScript game made in 7 days as my first project for General Assembly's Web Development Immersive course. Deep Sea Dive is a one person game inspired by the French conservationist and filmmaker Jacques Cousteau. You move a submarine around avoiding mines. The aim is to capture as many specimen of sea life and return to the surface before the air supply runs out. </p>
             <ul class="techList">
               <li>JavaScript (ES6)</li>
@@ -160,10 +163,6 @@
         <li><a href="#">Link1</a></li>
       </ul>
     </section>
-
-    <footer>
-      <p>footer...</p>
-    </footer>
 
   </body>
 </html>

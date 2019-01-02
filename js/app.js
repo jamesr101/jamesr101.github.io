@@ -2,7 +2,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
     const navbar = document.querySelector('nav')
-    console.dir(navbar)
+
 
     window.addEventListener('scroll', checkScroll)
 
@@ -11,13 +11,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function checkScroll() {
       if (lastKnownScrollY - window.scrollY > 0) {
-      console.count('going up!')
+      console.log('going up!', window.scrollY)
       navbar.classList.remove('minimised')
 
       }
 
       if (lastKnownScrollY - window.scrollY < 0) {
-        console.count('going down!')
+        console.log('going down!', window.scrollY)
         navbar.classList.add('minimised')
       }
       lastKnownScrollY = window.scrollY
