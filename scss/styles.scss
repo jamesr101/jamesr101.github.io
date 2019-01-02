@@ -12,7 +12,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   z-index: 10;
-  background-color: moccasin;
+  background-color: AliceBlue;
   transition: transform 0.8s;
 
 
@@ -62,7 +62,7 @@ nav {
 }
 
 .hero {
-  background-color: coral;
+  background-color: SteelBlue;
   height: 115vh;
   width: 100%;
   // display: flex;
@@ -76,6 +76,7 @@ nav {
 
   h1, p {
     text-align: center;
+    color: AliceBlue;
   }
 
   .hero-container {
@@ -120,7 +121,7 @@ nav {
 }
 
 .about {
-  background-color: moccasin;
+  background-color: AliceBlue;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -172,11 +173,11 @@ nav {
     }
 
     a {
-      color: coral;
+      color: SteelBlue;
       display: inline-block;
       text-decoration: none;
       // background-color: coral;
-      border: 1px solid coral;
+      border: 1px solid SteelBlue;
       border-radius: 4px;
       padding: 6px 10px;
       width: 150px;
@@ -192,14 +193,37 @@ nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 
-  h2, p, ul {
+  h2, a, p, ul {
     text-align: center;
     padding: 0;
   }
-  li {
-    display: inline;
 
+  a {
+    border-radius: 4px;
+    display: inline-block;
+    color: AliceBlue;
+
+    text-decoration: none;
+    border: 1px solid AliceBlue;
+    border-radius: 4px;
+    padding: 6px 10px;
+    width: 150px;
+    margin: 3px 6px 3px 0;
+    text-align: center;
+
+  }
+
+  li {
+    display: inline-block;
+
+
+    a {
+      width: 50px;
+      height: 50px;
+
+    }
   }
 
 }
