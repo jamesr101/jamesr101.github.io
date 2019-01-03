@@ -265,9 +265,14 @@ nav {
     display: none;
   }
   .about{
+    // padding-top: calc(30vw + 20px);
     div.container {
       border: 1px solid blue;
-      margin-top: 65px;
+      // margin-top: calc(120px);
+    }
+    div.container {
+      border: 1px solid red;
+      margin-top: calc(165px - 10vw);
     }
 
   }
@@ -289,5 +294,17 @@ nav {
 
   .project {
       margin-bottom: 60px;
+  }
+}
+
+@media all and (max-width: 400px) {
+
+  .about{
+
+    div.container {
+      border: 1px solid blue;
+      margin-top: calc(205px - 10vw);
+    }
+
   }
 }
