@@ -1,47 +1,52 @@
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
+
     const navbar = document.querySelector('nav')
+    const transitionObjs = document.querySelectorAll('.transition');
 
+    var lastKnownScrollY = window.scrollY
 
-    window.addEventListener('scroll', checkScroll)
-
-
-    var lastKnownScrollY = 0
-
-    function checkScroll() {
+    function checkNav() {
       if (lastKnownScrollY - window.scrollY > 0) {
-      console.log('going up!', window.scrollY)
-      navbar.classList.remove('minimised')
-
+        navbar.classList.remove('minimised')
       }
-
       if (lastKnownScrollY - window.scrollY < 0) {
-        console.log('going down!', window.scrollY)
         navbar.classList.add('minimised')
       }
       lastKnownScrollY = window.scrollY
     }
 
 
+    function checkTransitions() {
+      transitionObjs.forEach(transitionObj => {
+        const transitionAt = (window.scrollY + window.innerHeight) - (transitionObj.height || transitionObj.scrollHeight) / 2;
+        const isHalfShown = transitionAt > transitionObj.offsetTop;
 
-
-    window.addEventListener('scroll', checkSlide)
-
-    const sliderImages = document.querySelectorAll('.transition');
-
-    function checkSlide() {
-      sliderImages.forEach(sliderImage => {
-        // half way through the image
-        const slideInAt = (window.scrollY + window.innerHeight) - (sliderImage.height || sliderImage.scrollHeight) / 2;
-        // bottom of the image
-        // const imageBottom = sliderImage.offsetTop + (sliderImage.height || sliderImage.scrollHeight);
-        const isHalfShown = slideInAt > sliderImage.offsetTop;
-        // const isNotScrolledPast = window.scrollY < imageBottom;
         if (isHalfShown) {
-          sliderImage.classList.add('active');
+          transitionObj.classList.add('active');
         }
       });
     }
+
+    function debounce(func, wait = 20, immediate = true) {
+      var timeout;
+      return function() {
+        var context = this, args = arguments
+        var later = function() {
+          timeout = null
+          if (!immediate) func.apply(context, args)
+        }
+        var callNow = immediate && !timeout
+        clearTimeout(timeout)
+        timeout = setTimeout(later, wait)
+        if (callNow) func.apply(context, args)
+      };
+    }
+
+    window.addEventListener('scroll', debounce(() => {
+      checkTransitions()
+      checkNav()
+    }))
 
   });
