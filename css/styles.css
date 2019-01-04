@@ -165,6 +165,9 @@ nav {
       width: 50px;
       height: 50px; }
 
+.skip {
+  display: none; }
+
 @media all and (max-width: 1199px) {
   #contact {
     background-color: green; } }
@@ -208,7 +211,39 @@ nav {
     background-color: grey; }
 
   .project {
-    margin-bottom: 60px; } }
+    margin-bottom: 60px; }
+
+  .skip {
+    display: block; }
+
+  /* Give the .nav ul a height when it's been opened, i.e. make it show */
+  nav ul.open {
+    max-height: 30em; }
+
+  /* Hide and position the closed .nav ul */
+  nav ul {
+    max-height: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 45px;
+    transition: max-height 0.25s ease-out;
+    padding: 0;
+    width: 100%; }
+
+  /* Style the list items to appear under the menu link */
+  nav ul li {
+    text-align: right;
+    display: block;
+    background-color: blue; }
+
+  nav li a {
+    padding: 0.5em;
+    display: block;
+    background-color: AliceBlue; }
+
+  .minimised {
+    transform: translateY(0); } }
 @media all and (max-width: 400px) {
   .about div.container {
     border: 1px solid blue;
