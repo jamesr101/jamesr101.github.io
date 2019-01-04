@@ -2,6 +2,13 @@ body {
   margin: 0;
   font-family: sans-serif;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  h1, h2, h3 {
+    font-family: 'Major Mono Display', monospace;
+  }
+}
+nav div.nav-logo a {
+  font-family: 'Major Mono Display', monospace;
 }
 
 .transition {
@@ -96,6 +103,8 @@ nav {
   margin-bottom: -10vw;
 
   h1, p {
+    // font-family: 'Major Mono Display', monospace;
+    // font-family: 'UnifrakturMaguntia', cursive;
     text-align: center;
     color: AliceBlue;
   }

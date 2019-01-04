@@ -1,7 +1,13 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Roboto', sans-serif; }
+  body h1, body h2, body h3 {
+    font-family: 'Major Mono Display', monospace; }
+
+nav div.nav-logo a {
+  font-family: 'Major Mono Display', monospace; }
 
 .transition {
   transform: translateY(15%) scale(0.95);
