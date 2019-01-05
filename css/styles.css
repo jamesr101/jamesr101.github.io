@@ -6,13 +6,16 @@ body {
   body h1, body h2, body h3 {
     font-family: 'Major Mono Display', monospace; }
 
+h1 {
+  font-size: 56px; }
+
 nav div.nav-logo a {
   font-family: 'Major Mono Display', monospace; }
 
 .transition {
   transform: translateY(15%) scale(0.95);
   opacity: 0;
-  transition: opacity 0.8s, transform 0.6s; }
+  transition: opacity 0.6s, transform 0.4s; }
 
 .transition.left {
   transform: translateX(5%) scale(1);
@@ -55,13 +58,15 @@ nav {
 .minimised {
   transform: translateY(-45px);
   transition: transform 0.5s; }
-  .minimised a {
-    color: black;
-    text-decoration: none;
-    padding: 0px 10px; }
+
+.hero, #contact {
+  background-color: #79878f;
+  background-image: url(../assets/images/quilt1.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 .hero {
-  background-color: SteelBlue;
   height: 115vh;
   width: 100%;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
@@ -69,7 +74,9 @@ nav {
   margin-bottom: -10vw; }
   .hero h1, .hero p {
     text-align: center;
-    color: AliceBlue; }
+    color: #FF9200; }
+  .hero p {
+    font-size: 26px; }
   .hero .hero-container {
     height: 100vh;
     display: flex;

@@ -7,6 +7,12 @@ body {
     font-family: 'Major Mono Display', monospace;
   }
 }
+
+
+
+h1 {
+  font-size: 56px;
+}
 nav div.nav-logo a {
   font-family: 'Major Mono Display', monospace;
 }
@@ -16,7 +22,7 @@ nav div.nav-logo a {
   // transform: translateY(30%) scale(0.9);
   opacity: 0;
 
-  transition: opacity 0.8s, transform 0.6s;
+  transition: opacity 0.6s, transform 0.4s;
 }
 
 .transition.left {
@@ -82,15 +88,23 @@ nav {
   // display: hidden;
   transform: translateY(-45px);
   transition: transform 0.5s;
-  a {
-    color: black;
-    text-decoration: none;
-    padding: 0px 10px;
-  }
+  // a {
+  //   color: black;
+  //   text-decoration: none;
+  //   padding: 0px 10px;
+  // }
+}
+
+.hero, #contact {
+  background-color: #79878f;
+  background-image: url(../assets/images/quilt1.JPG);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero {
-  background-color: SteelBlue;
+
   height: 115vh;
   width: 100%;
   // display: flex;
@@ -106,7 +120,11 @@ nav {
     // font-family: 'Major Mono Display', monospace;
     // font-family: 'UnifrakturMaguntia', cursive;
     text-align: center;
-    color: AliceBlue;
+    color: #FF9200;
+    // background-color: #79878f;
+  }
+  p {
+    font-size: 26px;
   }
 
   .hero-container {
