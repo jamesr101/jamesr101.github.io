@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
 
-    function debounce(func, wait = 20, immediate = true) {
+    function debounce(func, wait = 18, immediate = true) {
       var timeout;
       return function() {
         var context = this, args = arguments
@@ -63,7 +63,7 @@ document.addEventListener("DOMContentLoaded", function() {
         e.preventDefault();
       }, false);
     }
-    
+
     /* Any click outside of the nav element will close the menu if it's open */
     var specifiedElement = document.querySelector('nav');
     document.addEventListener('click', function(event) {
