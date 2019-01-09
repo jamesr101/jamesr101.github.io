@@ -329,7 +329,9 @@ nav {
   justify-content: center;
   align-items: center;
 
+
   h2, a, p, ul {
+    color: $darkGrey;
     text-align: center;
     padding: 0;
   }
@@ -337,10 +339,10 @@ nav {
   a {
     border-radius: 4px;
     display: inline-block;
-    color: AliceBlue;
+    // color: $darkGrey;
 
     text-decoration: none;
-    border: 1px solid AliceBlue;
+    border: 1px solid $darkGrey;
     border-radius: 4px;
     padding: 6px 10px;
     width: 150px;
@@ -369,17 +371,13 @@ nav {
 // ---------------------------- MEDIA QUERIES -----------------------------
 
 @media all and (max-width: 1199px) {
-  #contact {
-    // background-color: green;
-  }
+
 }
 @media all and (max-width: 991px) {
   .container {
     width: 90vw;
   }
-  #contact {
-    // background-color: blue;
-  }
+
 
   .project {
       margin-bottom: 100px;
@@ -391,9 +389,7 @@ nav {
 
 }
 @media all and (max-width: 768px) {
-  #contact {
-    // background-color: red;
-  }
+
 }
 @media all and (max-width: 575px) {
   // MOBILE
@@ -405,9 +401,7 @@ nav {
   }
   .about{
     // padding-top: calc(30vw + 20px);
-    div.container {
-      border: 1px solid blue;
-    }
+
     div.container {
       margin-top: calc(165px - 10vw);
     }

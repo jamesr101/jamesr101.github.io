@@ -192,14 +192,14 @@ nav {
   justify-content: center;
   align-items: center; }
   #contact h2, #contact a, #contact p, #contact ul {
+    color: #3a3f41;
     text-align: center;
     padding: 0; }
   #contact a {
     border-radius: 4px;
     display: inline-block;
-    color: AliceBlue;
     text-decoration: none;
-    border: 1px solid AliceBlue;
+    border: 1px solid #3a3f41;
     border-radius: 4px;
     padding: 6px 10px;
     width: 150px;
@@ -229,8 +229,6 @@ nav {
   .projectTitle {
     display: none; }
 
-  .about div.container {
-    border: 1px solid blue; }
   .about div.container {
     margin-top: calc(165px - 10vw); }
 
