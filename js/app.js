@@ -2,10 +2,13 @@
 document.addEventListener("DOMContentLoaded", function() {
     console.log("DOM fully loaded and parsed");
 
+
+
     const navbar = document.querySelector('nav')
     const transitionObjs = document.querySelectorAll('.transition');
 
     var lastKnownScrollY = window.scrollY
+
 
     function checkNav() {
       if (lastKnownScrollY - window.scrollY > 0) {
