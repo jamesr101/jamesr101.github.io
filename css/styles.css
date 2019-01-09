@@ -2,12 +2,15 @@ body {
   margin: 0;
   font-family: sans-serif;
   width: 100%;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  font-family: 'Inconsolata', monospace;
+  background-color: #3a3f41;
+  color: white; }
   body h1, body h2, body h3 {
     font-family: 'Major Mono Display', monospace; }
 
 h1 {
-  font-size: 42px; }
+  font-size: 54px; }
 
 nav div.nav-logo a {
   font-family: 'Major Mono Display', monospace; }
@@ -26,12 +29,10 @@ nav div.nav-logo a {
   opacity: 1; }
 
 .hero-panel {
-  background-color: rgba(255, 255, 255, 0.8);
   padding: 40px;
   margin-bottom: 200px;
-  margin-left: 33vw;
-  margin-top: 160px;
-  border-bottom: 4px solid orange; }
+  margin-left: 6vw;
+  margin-top: 160px; }
 
 nav {
   position: fixed;
@@ -43,21 +44,23 @@ nav {
   align-items: center;
   z-index: 10;
   background-color: #3a3f41;
-  background-color: orange;
+  background-color: #3a3f41;
   transition: transform 0.8s;
-  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75); }
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.75); }
   nav a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px 10px;
     margin: 0; }
   nav a:hover {
-    background-color: white; }
+    background-color: coral; }
   nav .nav-logo {
     margin: 10px;
     font-size: 18px; }
+    nav .nav-logo a {
+      color: coral; }
   nav ul {
     padding-right: 15px;
     margin: 0; }
@@ -69,8 +72,8 @@ nav {
   transition: transform 0.5s; }
 
 .hero, #contact {
-  background-color: #79878f;
-  background-image: url(../assets/images/quilt2.jpg);
+  background-color: #333738;
+  background-color: coral;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat; }
@@ -81,14 +84,32 @@ nav {
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   margin-bottom: -10vw; }
-  .hero h1, .hero p {
+  .hero h2 {
+    font-size: 36px; }
+  .hero h1, .hero h2, .hero p {
     text-align: left;
     color: aliceblue;
     color: #FF9200;
     color: orange;
-    color: #e55b20; }
-    .hero h1 .hero-name, .hero p .hero-name {
-      color: #e55b20; }
+    color: coral;
+    color: #3a3f41; }
+  .hero h2::after {
+    content: 'I';
+    width: 1em;
+    height: 1em;
+    color: rgba(0, 0, 0, 0);
+    background-color: #3a3f41; }
+  .hero .flash::after {
+    animation: flash 0.9s infinite; }
+@-webkit-keyframes flash {
+  0% {
+    opacity: 1; }
+  49% {
+    opacity: 1; }
+  50% {
+    opacity: 0; }
+  100% {
+    opacity: 0; } }
   .hero p {
     filter: blur(2px);
     -webkit-filter: blur(2px);
@@ -102,7 +123,7 @@ nav {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border: 1px solid red; }
+    border: 1px solid #313738; }
 
 .project {
   display: flex;
@@ -125,7 +146,7 @@ nav {
   width: 50%; }
 
 .about {
-  background-color: AliceBlue;
+  background-color: #3a3f41;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -133,7 +154,6 @@ nav {
   justify-content: center;
   margin-top: 0; }
   .about div.container {
-    border: 1px solid red;
     margin-top: calc(65px - 10vw); }
 
 .work {
@@ -141,12 +161,11 @@ nav {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: white;
+  background-color: #3a3f41;
   -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   margin-bottom: -10vw; }
   .work div.container {
-    border: 1px solid red;
     margin-top: 65px;
     margin-bottom: 10vw; }
 
@@ -160,18 +179,19 @@ nav {
   .project li {
     display: inline; }
   .project a {
-    color: #e55b20;
+    color: coral;
     display: inline-block;
     text-decoration: none;
-    border: 1px solid #e55b20;
+    border: 1px solid coral;
     border-radius: 4px;
     padding: 6px 10px;
     width: 150px;
     margin: 3px 6px 3px 0;
-    text-align: center; }
+    text-align: center;
+    transition: color 0.2s, background-color 0.2s; }
   .project a:hover {
-    color: white;
-    background-color: #e55b20; }
+    color: #3a3f41;
+    background-color: coral; }
 
 #contact {
   background-color: coral;
@@ -203,15 +223,9 @@ nav {
 .skip {
   display: none; }
 
-@media all and (max-width: 1199px) {
-  #contact {
-    background-color: green; } }
 @media all and (max-width: 991px) {
   .container {
     width: 90vw; }
-
-  #contact {
-    background-color: blue; }
 
   .project {
     margin-bottom: 100px; }
@@ -265,13 +279,14 @@ nav {
   /* Style the list items to appear under the menu link */
   nav ul li {
     text-align: right;
-    display: block;
-    background-color: blue; }
+    display: block; }
 
   nav li a {
     padding: 0.5em;
     display: block;
-    background-color: AliceBlue; }
+    background-color: #3a3f41; }
+    nav li a:hover {
+      background-color: coral; }
 
   .minimised {
     transform: translateY(0); } }
