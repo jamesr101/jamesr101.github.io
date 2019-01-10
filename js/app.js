@@ -22,6 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     const typeOn = document.querySelector('.type-on')
+    const chevron = document.querySelector('.fa-chevron-down')
+
     let typedText = ''
     typeOn.innerHTML = typedText
 
@@ -33,6 +35,7 @@ document.addEventListener("DOMContentLoaded", function() {
       if (typedText.length === typeOn.dataset.type.length){
         clearTimeout(typing)
         typeOn.classList.add('flash')
+        chevron.classList.add('visable')
       }
     }
 
