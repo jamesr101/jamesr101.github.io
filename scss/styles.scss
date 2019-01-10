@@ -221,6 +221,11 @@ nav {
 
 }
 
+.hero-buffer {
+  width: 100vw;
+  height: 10vw;
+  // background-color: red;
+}
 
 .project {
   display: flex;
@@ -253,7 +258,7 @@ nav {
 
 .about {
   background-color: $darkGrey;
-  height: 100vh;
+  // height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -261,7 +266,7 @@ nav {
   margin-top: 0;
   div.container {
     // border: 1px solid red;
-    margin-top: calc(65px - 10vw);
+    // margin-top: calc(65px - 10vw);
   }
 
   // -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
@@ -399,14 +404,6 @@ nav {
   .projectTitle {
     display: none;
   }
-  .about{
-    // padding-top: calc(30vw + 20px);
-
-    div.container {
-      margin-top: calc(165px - 10vw);
-    }
-
-  }
 
   .columns {
     display: block;
@@ -471,11 +468,5 @@ nav {
 
 @media all and (max-width: 400px) {
 
-  .about{
 
-    div.container {
-      margin-top: calc(205px - 10vw);
-    }
-
-  }
 }

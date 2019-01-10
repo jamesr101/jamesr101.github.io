@@ -116,6 +116,10 @@ nav {
     align-items: center;
     border: 1px solid coral; }
 
+.hero-buffer {
+  width: 100vw;
+  height: 10vw; }
+
 .project {
   display: flex;
   flex-wrap: wrap; }
@@ -138,14 +142,11 @@ nav {
 
 .about {
   background-color: #3a3f41;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 0; }
-  .about div.container {
-    margin-top: calc(65px - 10vw); }
 
 .work {
   display: flex;
@@ -229,9 +230,6 @@ nav {
   .projectTitle {
     display: none; }
 
-  .about div.container {
-    margin-top: calc(165px - 10vw); }
-
   .columns {
     display: block; }
 
@@ -276,8 +274,5 @@ nav {
 
   .minimised {
     transform: translateY(0); } }
-@media all and (max-width: 400px) {
-  .about div.container {
-    margin-top: calc(205px - 10vw); } }
 
 /*# sourceMappingURL=styles.css.map */

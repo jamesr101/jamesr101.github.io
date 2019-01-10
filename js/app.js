@@ -28,7 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateType(){
       typedText = typedText + typeOn.dataset.type[typedText.length]
       typeOn.innerHTML = typedText
-      typing = setTimeout(updateType, (20 + Math.random()*130))
+      typing = setTimeout(updateType, (20 + Math.random()*150))
+
       if (typedText.length === typeOn.dataset.type.length){
         clearTimeout(typing)
         typeOn.classList.add('flash')
