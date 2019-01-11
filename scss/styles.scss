@@ -149,9 +149,11 @@ nav {
     text-align: left;
     color: $darkGrey;
   }
-
-  i {
+  a {
     flex-grow: 1;
+  }
+  i {
+
     text-align: center;
     width: 100%;
     font-size: 60px;
@@ -190,10 +192,10 @@ nav {
 
   .hero-container {
     height: 100%;
-    // display: flex;
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    // justify-content: center;
+    // align-items: center;
     // width: 100vw;
     border: 1px solid $darkOrange;
   }
