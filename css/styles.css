@@ -262,6 +262,9 @@ nav {
     .skip:hover {
       background-color: #3a3f41; }
 
+  nav {
+    height: 60px; }
+
   /* Give the .nav ul a height when it's been opened, i.e. make it show */
   nav ul.open {
     max-height: 30em; }
@@ -272,7 +275,7 @@ nav {
     overflow: hidden;
     position: absolute;
     right: 0;
-    top: 45px;
+    top: 60px;
     transition: max-height 0.25s ease-out;
     padding: 0;
     width: 100%; }
@@ -285,7 +288,8 @@ nav {
   nav li a {
     padding: 0.5em;
     display: block;
-    background-color: #3a3f41; }
+    background-color: #3a3f41;
+    font-size: 22px; }
     nav li a:hover {
       background-color: coral; }
 
