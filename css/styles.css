@@ -259,6 +259,8 @@ nav {
 
   .skip {
     display: block; }
+    .skip:hover {
+      background-color: #3a3f41; }
 
   /* Give the .nav ul a height when it's been opened, i.e. make it show */
   nav ul.open {
@@ -288,6 +290,9 @@ nav {
       background-color: coral; }
 
   .minimised {
-    transform: translateY(0); } }
+    transform: translateY(0); }
+
+  .rotate {
+    transform: rotate(180deg); } }
 
 /*# sourceMappingURL=styles.css.map */

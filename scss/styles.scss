@@ -444,6 +444,9 @@ nav {
 
   .skip {
     display: block;
+    &:hover {
+      background-color: $darkGrey;
+    }
   }
 
   /* Give the .nav ul a height when it's been opened, i.e. make it show */
@@ -481,6 +484,10 @@ nav {
 
   .minimised {
     transform: translateY(0);
+  }
+
+  .rotate{
+    transform: rotate(180deg);
   }
 }
 

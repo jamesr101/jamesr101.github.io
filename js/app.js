@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
     const typeOn = document.querySelector('.type-on')
-    const chevron = document.querySelector('.fa-chevron-down')
+    const heroChevron = document.querySelector('.hero .fa-chevron-down')
 
     let typedText = ''
     typeOn.innerHTML = typedText
@@ -30,12 +30,12 @@ document.addEventListener("DOMContentLoaded", function() {
     function updateType(){
       typedText = typedText + typeOn.dataset.type[typedText.length]
       typeOn.innerHTML = typedText
-      typing = setTimeout(updateType, (20 + Math.random()*150))
+      typing = setTimeout(updateType, (20 + Math.random()*130))
 
       if (typedText.length === typeOn.dataset.type.length){
         clearTimeout(typing)
         typeOn.classList.add('flash')
-        chevron.classList.add('visable')
+        heroChevron.classList.add('visable')
       }
     }
 
@@ -92,14 +92,17 @@ document.addEventListener("DOMContentLoaded", function() {
 
     var nav = document.querySelector("nav ul"),
     navToggle = document.querySelector("nav .skip");
+    let navIcon = navToggle.querySelector('i')
 
     if (navToggle) {
       navToggle.addEventListener("click",
       function(e) {
         if (nav.className == "open") {
           nav.className = "";
+          navIcon.classList.remove("rotate")
         } else {
           nav.className = "open";
+          navIcon.classList.add("rotate")
         }
         e.preventDefault();
       }, false);
