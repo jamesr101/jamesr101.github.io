@@ -30,12 +30,6 @@ img.transition {
   transform: translateY(0%) translateX(0%) scale(1);
   opacity: 1; }
 
-.hero-panel {
-  padding: 40px;
-  margin-bottom: 200px;
-  margin-left: 6vw;
-  margin-top: 160px; }
-
 nav {
   position: fixed;
   top: 0;
@@ -74,11 +68,14 @@ nav {
   transition: transform 0.5s; }
 
 .hero, #contact {
-  background-color: #333738;
-  background-color: coral;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
+  background-color: coral; }
+
+.hero-panel {
+  padding: 40px;
+  margin-bottom: 200px;
+  margin-left: 6vw;
+  margin-top: 160px;
+  flex-grow: 2; }
 
 .hero {
   height: 115vh;
@@ -90,12 +87,9 @@ nav {
     font-size: 36px; }
   .hero h1, .hero h2, .hero p, .hero i {
     text-align: left;
-    color: aliceblue;
-    color: #FF9200;
-    color: orange;
-    color: coral;
     color: #3a3f41; }
   .hero i {
+    flex-grow: 1;
     text-align: center;
     width: 100%;
     font-size: 60px;
@@ -125,7 +119,7 @@ nav {
   100% {
     opacity: 0; } }
   .hero .hero-container {
-    height: 100vh;
+    height: 100%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
