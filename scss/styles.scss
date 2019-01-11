@@ -241,10 +241,14 @@ nav {
 
 }
 
-.hero-buffer {
+.buffer {
   width: 100vw;
   height: 10vw;
   // background-color: red;
+}
+
+.work-buffer {
+  background-color: $darkOrange;
 }
 
 .project {
@@ -348,7 +352,7 @@ nav {
 
 #contact {
   background-color: coral;
-  height: 80vh;
+  height: 55vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -370,21 +374,22 @@ nav {
     border: 1px solid $darkGrey;
     border-radius: 4px;
     padding: 6px 10px;
-    width: 150px;
-    margin: 3px 6px 3px 0;
+    // width: 150px;
+    margin: 3px 3px;
     text-align: center;
+    transition: color 0.2s, background-color 0.2s;
+  }
 
+  a:hover {
+    color: $darkOrange;
+    background-color: $darkGrey;
   }
 
   li {
     display: inline-block;
 
 
-    a {
-      width: 50px;
-      height: 50px;
 
-    }
   }
 
 }
@@ -482,6 +487,7 @@ nav {
     display: block;
     background-color: $darkGrey;
     font-size: 22px;
+
     &:hover {
       background-color: $darkOrange;
     }
