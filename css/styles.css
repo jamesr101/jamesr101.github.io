@@ -57,6 +57,8 @@ nav {
     font-size: 18px; }
     nav .nav-logo a {
       color: coral; }
+      nav .nav-logo a:hover {
+        color: #3a3f41; }
   nav ul {
     padding-right: 15px;
     margin: 0; }
@@ -155,6 +157,46 @@ nav {
   align-items: center;
   justify-content: center;
   margin-top: 0; }
+  .about .png-icon {
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 2px;
+    border-radius: 2px; }
+  .about .bulma {
+    background-image: url(../assets/images/bulma-1.png); }
+  .about .flask {
+    background-image: url(../assets/images/flask-1.png); }
+  .about .sqla {
+    background-image: url(../assets/images/sqla-1.png); }
+  .about .text-icon {
+    padding: 8px; }
+  .about .about-techList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    margin: 0px;
+    justify-content: space-between; }
+    .about .about-techList li {
+      display: flex;
+      flex-direction: column;
+      background-color: #3a3f41;
+      color: white;
+      padding: 6px;
+      height: 60px;
+      width: 85px;
+      border-radius: 4px;
+      margin: 4px;
+      text-align: center;
+      align-items: center;
+      justify-content: center; }
+      .about .about-techList li i {
+        font-size: 32px;
+        display: inline-block; }
 
 .work {
   display: flex;
@@ -192,6 +234,15 @@ nav {
   .project a:hover {
     color: #3a3f41;
     background-color: coral; }
+  .project .project-techList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between; }
+    .project .project-techList li {
+      padding: 6px 0;
+      width: 110px;
+      text-align: center; }
 
 #contact {
   background-color: coral;

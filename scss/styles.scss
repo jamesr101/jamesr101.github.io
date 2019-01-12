@@ -92,7 +92,11 @@ nav {
 
     a {
       color: $darkOrange;
+      &:hover {
+        color: $darkGrey;
+      }
     }
+
   }
 
   ul {
@@ -214,6 +218,8 @@ nav {
   background-color: $darkOrange;
 }
 
+
+
 .project {
   display: flex;
   flex-wrap: wrap;
@@ -256,10 +262,66 @@ nav {
     // margin-top: calc(65px - 10vw);
   }
 
+  .png-icon {
+    // background-image: url(../assets/images/bulma-1.png);
+    height: 30px;
+    width: 30px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: white;
+    margin: 2px;
+    border-radius: 2px;
+  }
+
+  .bulma {
+    background-image: url(../assets/images/bulma-1.png);
+  }
+  .flask {
+    background-image: url(../assets/images/flask-1.png);
+  }
+  .sqla {
+    background-image: url(../assets/images/sqla-1.png);
+  }
+
+  .text-icon {
+    padding: 8px;
+  }
   // -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   // clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   //
   // margin-bottom: -10vw;
+
+  .about-techList {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    // flex
+    padding: 0 20px;
+    margin: 0px;
+    justify-content: space-between;
+    li{
+      display: flex;
+      flex-direction: column;
+      background-color: $darkGrey;
+      color: white;
+      // border: 1px solid white;
+      padding: 6px;
+      height: 60px;
+      width: 85px;
+      border-radius: 4px;
+      margin: 4px;
+      text-align: center;
+      align-items: center;
+
+      justify-content: center;
+
+      i {
+        font-size: 32px;
+        display: inline-block;
+      }
+    }
+  }
 
 }
 
@@ -309,6 +371,21 @@ nav {
     a:hover {
       color: $darkGrey;
       background-color: $darkOrange;
+    }
+
+    .project-techList {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      // flex
+      // padding: 0 20px;
+      // margin: 10px;
+      justify-content: space-between;
+      li {
+        padding: 6px 0;
+        width: 110px;
+        text-align: center;
+      }
     }
 
 }
