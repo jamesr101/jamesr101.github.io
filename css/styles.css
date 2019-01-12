@@ -251,7 +251,8 @@ nav {
     margin-bottom: 60px; }
 
   .skip {
-    display: block; }
+    display: block;
+    margin: 10px; }
     .skip:hover {
       background-color: #3a3f41; }
 
