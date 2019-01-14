@@ -12,7 +12,8 @@ body {
     font-family: 'Major Mono Display', monospace; }
 
 h1 {
-  font-size: 54px; }
+  font-size: 54px;
+  font-size: 6vw; }
 
 nav div.nav-logo a {
   font-family: 'Major Mono Display', monospace; }
@@ -82,7 +83,7 @@ nav {
   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10vw), 50% 100%, 0 calc(100% - 10vw));
   margin-bottom: -10vw; }
   .hero h2 {
-    font-size: 36px; }
+    font-size: 4vw; }
   .hero h1, .hero h2, .hero p, .hero i {
     text-align: left;
     color: #3a3f41; }
@@ -281,6 +282,12 @@ nav {
     margin-bottom: 100px; }
     .project img {
       width: 90%; } }
+@media all and (max-width: 768px) {
+  h1 {
+    font-size: 54px; }
+
+  .hero h2 {
+    font-size: 36px; } }
 @media all and (max-width: 575px) {
   .projectTitle__mobile {
     display: inline; }
