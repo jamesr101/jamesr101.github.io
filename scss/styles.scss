@@ -221,19 +221,7 @@ nav {
 
 
 
-.project {
-  display: flex;
-  flex-wrap: wrap;
-  h3 {
-    width: 100%;
-  }
-  img {
-    display: inline-flex;
-    // height: 200px;
-    width: 75%;
-    padding-top: 16px;
-  }
-}
+
 
 .container {
   width: 80vw;
@@ -346,6 +334,27 @@ nav {
 
 .projectTitle__mobile {
   display: none;
+}
+
+.project {
+  display: flex;
+  flex-wrap: wrap;
+  h3 {
+    width: 100%;
+  }
+  img {
+    display: inline-flex;
+    // height: 200px;
+    width: 75%;
+    padding-top: 16px;
+  }
+  .project-links{
+    // width: 100%;
+    // justify-content: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 
 .project {
@@ -496,6 +505,10 @@ nav {
 
   .project {
       margin-bottom: 60px;
+
+    .project-links{
+      flex-direction: column;
+    }
   }
 
   .skip {

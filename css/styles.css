@@ -130,16 +130,6 @@ nav {
 .work-buffer {
   background-color: coral; }
 
-.project {
-  display: flex;
-  flex-wrap: wrap; }
-  .project h3 {
-    width: 100%; }
-  .project img {
-    display: inline-flex;
-    width: 75%;
-    padding-top: 16px; }
-
 .container {
   width: 80vw; }
 
@@ -213,6 +203,20 @@ nav {
 
 .projectTitle__mobile {
   display: none; }
+
+.project {
+  display: flex;
+  flex-wrap: wrap; }
+  .project h3 {
+    width: 100%; }
+  .project img {
+    display: inline-flex;
+    width: 75%;
+    padding-top: 16px; }
+  .project .project-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
 
 .project {
   margin-bottom: 150px; }
@@ -306,6 +310,8 @@ nav {
 
   .project {
     margin-bottom: 60px; }
+    .project .project-links {
+      flex-direction: column; }
 
   .skip {
     display: block;
