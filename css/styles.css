@@ -269,6 +269,19 @@ nav {
     margin: 3px 3px;
     text-align: center;
     transition: color 0.2s, background-color 0.2s; }
+  #contact .contact-list {
+    width: 240px; }
+    #contact .contact-list a {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0px; }
+    #contact .contact-list .contact-list_inline {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      #contact .contact-list .contact-list_inline li {
+        width: 45%; }
   #contact a:hover {
     color: coral;
     background-color: #3a3f41; }

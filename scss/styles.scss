@@ -430,6 +430,24 @@ nav {
     transition: color 0.2s, background-color 0.2s;
   }
 
+  .contact-list {
+    width: 240px;
+    a {
+      box-sizing: border-box;
+      width: 100%;
+      margin: 0px;
+    }
+    .contact-list_inline {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      li {
+        width: 45%;
+      }
+    }
+  }
+
   a:hover {
     color: $darkOrange;
     background-color: $darkGrey;
