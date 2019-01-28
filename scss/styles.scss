@@ -544,8 +544,13 @@ nav {
     height: $navHeight;
   }
   /* Give the .nav ul a height when it's been opened, i.e. make it show */
-  nav ul.open {
-    max-height: 30em;
+  nav.open {
+    ul {
+      max-height: 30em;
+    }
+    i {
+      transform: rotate(180deg);
+    }
   }
 
   /* Hide and position the closed .nav ul */
@@ -581,9 +586,7 @@ nav {
     transform: translateY(0);
   }
 
-  .rotate{
-    transform: rotate(180deg);
-  }
+
 }
 
 

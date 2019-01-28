@@ -337,8 +337,10 @@ nav {
     height: 60px; }
 
   /* Give the .nav ul a height when it's been opened, i.e. make it show */
-  nav ul.open {
+  nav.open ul {
     max-height: 30em; }
+  nav.open i {
+    transform: rotate(180deg); }
 
   /* Hide and position the closed .nav ul */
   nav ul {
@@ -365,9 +367,6 @@ nav {
       background-color: coral; }
 
   .minimised {
-    transform: translateY(0); }
-
-  .rotate {
-    transform: rotate(180deg); } }
+    transform: translateY(0); } }
 
 /*# sourceMappingURL=styles.css.map */

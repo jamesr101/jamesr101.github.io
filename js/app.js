@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function() {
       });
     }
 
-    function debounce(func, wait = 18, immediate = true) {
+    function debounce(func, wait = 14, immediate = true) {
       var timeout;
       return function() {
         var context = this, args = arguments
@@ -74,19 +74,19 @@ document.addEventListener("DOMContentLoaded", function() {
       checkNav()
     }))
 
-    var nav = document.querySelector("nav ul"),
+    var nav = document.querySelector("nav"),
     navToggle = document.querySelector("nav .skip");
-    let navIcon = navToggle.querySelector('i')
+
 
     if (navToggle) {
       navToggle.addEventListener("click",
       function(e) {
-        if (nav.className == "open") {
-          nav.className = "";
-          navIcon.classList.remove("rotate")
+        if (nav.classList.contains("open")) {
+          nav.classList.remove("open");
+
         } else {
-          nav.className = "open";
-          navIcon.classList.add("rotate")
+          nav.classList.add("open");
+
         }
         e.preventDefault();
       }, false);
@@ -96,8 +96,8 @@ document.addEventListener("DOMContentLoaded", function() {
     var specifiedElement = document.querySelector('nav');
     document.addEventListener('click', function(event) {
       var isClickInside = specifiedElement.contains(event.target);
-      if (!isClickInside && nav.className == "open") {
-        nav.className = "";
+      if (!isClickInside && nav.classList.contains("open")) {
+        nav.classList.remove("open");
       }
 });
 
