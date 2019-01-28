@@ -43,25 +43,9 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 
-
-
-    // for (let i=0;i<5;i++){
-    //   setTimeout(()=>{updateType()}, 10000)
-    // }
-
-    // typeOn.dataset.type.split('').forEach(letter => {
-    //   setTimeout(function(){
-    //     typedText = typedText + letter
-    //     // setTimeout()
-    //     typeOn.innerHTML = typedText
-    //   }, 3000)
-
-    // })
-
-
     function checkTransitions() {
       transitionObjs.forEach(transitionObj => {
-        const transitionAt = (window.scrollY + window.innerHeight) - (transitionObj.height || transitionObj.scrollHeight) / 2;
+        const transitionAt = (window.scrollY + window.innerHeight) - (transitionObj.height || transitionObj.scrollHeight) * 0.4;
         const isHalfShown = transitionAt > transitionObj.offsetTop;
 
         if (isHalfShown) {
